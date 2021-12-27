@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $colorNegro;
+    color: $colorBlanco;
+    height: 90px;
+    &__logo-container{
+        padding: 10px;
+    }
+    &__logo-container-image{
+        width: 100px;
+    }
+    &__menu-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__menu-list-option{
+        list-style: none;
+        margin-right: 30px;
+        font-family: $fuente1;
+    }
+    &__menu-list-option a{
+        color: $colorBlanco;
+        text-decoration: none; 
+        padding: 5px; 
+    }
+    &__menu-list-option a:last-child{
+        margin: 0px;
+    }
+    &__menu-list-option a:hover{
+        color: $colorNegro;
+        background-color: $colorTurquesa;
+        border-radius: 10px;
+    }
+    &__close, &__hamburger{
+        display: none;
+    }
+}

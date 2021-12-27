@@ -1,0 +1,123 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+  color: #FFFFFF;
+  height: 90px;
+}
+.header__logo-container {
+  padding: 10px;
+}
+.header__logo-container-image {
+  width: 100px;
+}
+.header__menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu-list-option {
+  list-style: none;
+  margin-right: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.header__menu-list-option a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 5px;
+}
+.header__menu-list-option a:last-child {
+  margin: 0px;
+}
+.header__menu-list-option a:hover {
+  color: #000000;
+  background-color: #6FF1DB;
+  border-radius: 10px;
+}
+.header__close, .header__hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__close {
+    display: initial;
+  }
+  .header__hamburger {
+    display: initial;
+  }
+  .header__hamburger {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+  }
+  .header__close {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+  }
+  .header__hamburger {
+    background: white;
+  }
+  .header__close {
+    background: black;
+  }
+  .header__hamburger img {
+    width: 100%;
+    height: 100%;
+  }
+  .header__close img {
+    width: 100%;
+    height: 100%;
+  }
+  .header__menu-list {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    list-style: none;
+    background: black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+  }
+  .header__menu-list:target {
+    transform: translateY(0);
+  }
+  .header__menu-list-option a {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+  }
+  .header__menu-list-option a:hover {
+    border-bottom: 1px solid white;
+  }
+  .header__menu-list-option a:focus {
+    border-bottom: 1px solid white;
+  }
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
